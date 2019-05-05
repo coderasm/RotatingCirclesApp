@@ -44,7 +44,7 @@ namespace RotatingCirclesApp
     private void onOpenOptions(object sender, EventArgs e)
     {
       OptionsForm optionsForm = new OptionsForm();
-      // Show testDialog as a modal dialog and determine if DialogResult = OK.
+      // Show dialog and assign values if saved
       if (optionsForm.ShowDialog(this) == DialogResult.OK)
       {
         // Read the contents of testDialog's TextBox.

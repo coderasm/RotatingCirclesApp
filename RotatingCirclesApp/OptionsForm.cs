@@ -18,6 +18,7 @@ namespace RotatingCirclesApp
     {
       InitializeComponent();
       CenterToParent();
+      //build color list
       var colors = typeof(Color).GetProperties();
       var colorBoxItems = new string[colors.Length];
       for (int i = 0; i < colors.Length; i++)
@@ -25,9 +26,8 @@ namespace RotatingCirclesApp
         colorBoxItems[i] = colors[i].Name;
       }
       colorBox.Items.AddRange(colorBoxItems);
-      colorBox.DisplayMember = "Key";
-      colorBox.ValueMember = "Value";
       var forms = Application.OpenForms;
+      //initialize color
       CircleColor = ((circleForm)(forms["circleForm"])).CircleColor;
       colorBox.SelectedItem = ((circleForm)(forms["circleForm"])).CircleColor;
 
@@ -37,6 +37,7 @@ namespace RotatingCirclesApp
         iterations[i] = i + 3;
       }
       iterationsBox.Items.AddRange(iterations);
+      //initialize iterations
       Iterations = ((circleForm)(forms["circleForm"])).Iterations;
       iterationsBox.SelectedItem = ((circleForm)(forms["circleForm"])).Iterations;
     }
