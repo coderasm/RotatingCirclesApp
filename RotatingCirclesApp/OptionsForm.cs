@@ -26,6 +26,7 @@ namespace RotatingCirclesApp
         colorBoxItems[i] = colors[i].Name;
       }
       colorBox.Items.AddRange(colorBoxItems);
+      //forms global
       var forms = Application.OpenForms;
       //initialize color
       CircleColor = ((circleForm)(forms["circleForm"])).CircleColor;
@@ -54,12 +55,14 @@ namespace RotatingCirclesApp
       Close();
     }
 
+    //update color
     private void colorChanged(object sender, EventArgs e)
     {
       var colorChangeBox = (ComboBox)sender;
       CircleColor = (string)colorChangeBox.SelectedItem;
     }
 
+    //update iterations
     private void iterationChanged(object sender, EventArgs e)
     {
       var iterationChangeBox = (ComboBox)sender;

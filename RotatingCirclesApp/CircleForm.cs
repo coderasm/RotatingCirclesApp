@@ -47,7 +47,7 @@ namespace RotatingCirclesApp
       // Show dialog and assign values if saved
       if (optionsForm.ShowDialog(this) == DialogResult.OK)
       {
-        // Read the contents of testDialog's TextBox.
+        //Reassign values
         CircleColor = optionsForm.CircleColor;
         Iterations = optionsForm.Iterations;
         Invalidate();
