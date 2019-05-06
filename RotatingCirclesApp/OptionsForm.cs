@@ -26,7 +26,7 @@ namespace RotatingCirclesApp
         colorBoxItems[i] = colors[i].Name;
       }
       colorBox.Items.AddRange(colorBoxItems);
-      //forms global
+      //forms 
       var forms = Application.OpenForms;
       //initialize color
       CircleColor = ((circleForm)(forms["circleForm"])).CircleColor;

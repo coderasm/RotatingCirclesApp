@@ -31,13 +31,18 @@
       this.menuStrip = new System.Windows.Forms.MenuStrip();
       this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
       this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+      this.ddeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+      this.circleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+      this.squareToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+      this.triangleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
       this.menuStrip.SuspendLayout();
       this.SuspendLayout();
       // 
       // menuStrip
       // 
       this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem});
+            this.fileToolStripMenuItem,
+            this.ddeToolStripMenuItem});
       this.menuStrip.Location = new System.Drawing.Point(0, 0);
       this.menuStrip.Name = "menuStrip";
       this.menuStrip.Size = new System.Drawing.Size(800, 24);
@@ -58,6 +63,37 @@
       this.optionsToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
       this.optionsToolStripMenuItem.Text = "Options";
       this.optionsToolStripMenuItem.Click += new System.EventHandler(this.onOpenOptions);
+      // 
+      // ddeToolStripMenuItem
+      // 
+      this.ddeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.circleToolStripMenuItem,
+            this.squareToolStripMenuItem,
+            this.triangleToolStripMenuItem});
+      this.ddeToolStripMenuItem.Name = "ddeToolStripMenuItem";
+      this.ddeToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
+      this.ddeToolStripMenuItem.Text = "Shapes";
+      // 
+      // circleToolStripMenuItem
+      // 
+      this.circleToolStripMenuItem.Name = "circleToolStripMenuItem";
+      this.circleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+      this.circleToolStripMenuItem.Text = "Circle";
+      this.circleToolStripMenuItem.Click += new System.EventHandler(this.circleClick);
+      // 
+      // squareToolStripMenuItem
+      // 
+      this.squareToolStripMenuItem.Name = "squareToolStripMenuItem";
+      this.squareToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+      this.squareToolStripMenuItem.Text = "Square";
+      this.squareToolStripMenuItem.Click += new System.EventHandler(this.squareClick);
+      // 
+      // triangleToolStripMenuItem
+      // 
+      this.triangleToolStripMenuItem.Name = "triangleToolStripMenuItem";
+      this.triangleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+      this.triangleToolStripMenuItem.Text = "Triangle";
+      this.triangleToolStripMenuItem.Click += new System.EventHandler(this.triangleClick);
       // 
       // circleForm
       // 
@@ -81,6 +117,10 @@
     private System.Windows.Forms.MenuStrip menuStrip;
     private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
     private System.Windows.Forms.ToolStripMenuItem optionsToolStripMenuItem;
+    private System.Windows.Forms.ToolStripMenuItem ddeToolStripMenuItem;
+    private System.Windows.Forms.ToolStripMenuItem circleToolStripMenuItem;
+    private System.Windows.Forms.ToolStripMenuItem squareToolStripMenuItem;
+    private System.Windows.Forms.ToolStripMenuItem triangleToolStripMenuItem;
   }
 }
 
