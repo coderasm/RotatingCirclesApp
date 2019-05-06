@@ -4,8 +4,14 @@ Calculate (x,y) cordinate of rectangle with each incremented
 theta.
 Draw the circle for that iteration.
 
+Calculate points for polygon.
+Rotate polygon points.
+Draw polygon.
+
 Create options form.
 Provide choice of colors from system.drawing.color struct.
 Provide choice of iterations from 3 to 18.
 Save color and iteration choices to be accessed from
 the parent form.
+
+Create menu to change shape.
